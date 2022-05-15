@@ -1,0 +1,94 @@
+/* you need @import fonts */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;  
+}
+
+:root {
+    --main-text-color: ;
+    --brand-main-color: ;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: auto;
+}
+
+/* header style */
+
+#header {
+    width: 100%;
+    position: fixed;
+}
+
+.flex-container-header {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+@media (max-width: 960px) {
+    .flex-container-header {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.logo-place {
+    width: 160px;
+}
+
+.menu {
+    background-color: yellow;
+    text-align: right;
+}
+
+.menu-button {
+    display: flex;
+
+}
+
+/* features style */
+
+#features {
+    padding-top: 70px;
+}
+
+/* map style */
+
+#map {
+    height: 100%;
+    text-align: center;
+}
+
+#video {
+    width: 640px;
+    height: 480px;
+}
+
+@media (max-width: 640px) {
+    
+    #map {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #video {
+        width: 100%;
+    }
+}
+
+/* price style */
+
+/* reviews style */
+
+/* blog */

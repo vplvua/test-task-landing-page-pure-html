@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,40 +10,54 @@
 </head>
 <body>
     <header id="header">
-        <img src="img\logo_origin.png" id="header-img">
-        <nav id="nav-bar">
-            <a class="nav-link" href="#price">Ціна</a>
-            <a class="nav-link" href="#contacts">Контакти</a>
-            <a class="nav-link" href="#blog">Блог</a>
-        </nav>
-
+        <div class="wrapper">
+            <div class="flex-container-header">
+                <div class="logo-place">
+                    <img src="img\logo_origin.png" id="header-img" alt="Моє ОСББ - сервіс для обліку та комунікації з мешканцямм">
+                </div>
+                <div class="menu-button">
+                    <div class="menu">
+                        <nav id="nav-bar">
+                            <a class="nav-link" href="#price">Ціна</a>
+                            <a class="nav-link" href="#contacts">Контакти</a>
+                            <a class="nav-link" href="#blog">Блог</a>
+                        </nav>
+                    </div>
+                    <div class="enter-button">
+                        <button class="program-login">Увійти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-        <section id="features">
+        <div class="wrapper">
+            <section id="features">
 
-        </section>
-        <section id="map">
-            <iframe id="video" src="https://www.google.com/maps/d/u/0/embed?mid=1GCjN_4B1pBF7vK38CksHzlaz9b9E2V-J&ehbc=2E312F" width="640" height="480"></iframe>
-        </section>
-        <section id="price">
+            </section>
+            <section id="map">
+                <iframe id="video" src="https://www.google.com/maps/d/u/0/embed?mid=1GCjN_4B1pBF7vK38CksHzlaz9b9E2V-J&ehbc=2E312F"></iframe>
+            </section>
+            <section id="price">
 
-        </section>
-        <section id="reviews">
-            
-        </section>
-        <section id="blog">
-            
-        </section>
-        <section id="contacts">
-            <form id="form">
-                <input type="email" id="email" placeholder="ваша електронна адреса">
-                <input type="submit" id="submit" formaction="https://www.freecodecamp.com/email-submit">
-            </form>
+            </section>
+            <section id="reviews">
+                
+            </section>
+            <section id="blog">
+                
+            </section>
+            <section id="contacts">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" id="email" name="email" placeholder="ваша електронна адреса">
+                    <input type="submit" id="submit" name="email" action="https://www.freecodecamp.com/email-submit"    >
+                </form>
 
-        </section>
-        <section id="additional">
+            </section>
+            <section id="additional">
 
-        </section>
+            </section>
+        </div>
     </main>
     <footer id="footer">
 
