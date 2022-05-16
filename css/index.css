@@ -1,19 +1,27 @@
-/* you need @import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Open+Sans&display=swap');
 
 html,
 body {
     height: 100%;
     margin: 0;
     padding: 0;  
+    font-family: 'Open Sans', sans-serif;
 }
 
 :root {
-    --main-text-color: ;
-    --brand-main-color: ;
+    --background-color: #fff;
+    --primary-color: #3D95CE;
+    --accent-color: #AA6431;
+    --interface-color: #0E161B;
+    color: var(--interface-color);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bitter', serif;
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -27,34 +35,55 @@ img {
 #header {
     width: 100%;
     position: fixed;
+    background-color: var(--background-color);
 }
 
-.flex-container-header {
+.header-container {
     padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
 }
 
 @media (max-width: 960px) {
-    .flex-container-header {
-        margin-left: 20px;
-        margin-right: 20px;
+    .header-container {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
 .logo-place {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#header-img {
     width: 160px;
+    margin: auto 0 auto 0;
+}
+
+@media (max-width: 400px) {
+    #header-img {
+        width: 140px;
+    }
 }
 
 .menu {
     background-color: yellow;
     text-align: right;
+    margin-left: auto;
 }
 
-.menu-button {
-    display: flex;
+.enter-button {
+    margin-left: 20px;
+}
 
+.program-login {
+    background-color: #276d9b;
+    padding: 10px;
+    border-radius: 5%;
+    border: none;
+    font-weight: 600;
+    color: #fcfcfc;
 }
 
 /* features style */
